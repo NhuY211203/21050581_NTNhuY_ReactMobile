@@ -1,39 +1,34 @@
-var MarkWeight1 = 78;
-var MarkHeight1 = 1.69;
 
-var JohnWeight1 = 92;
-var JohnHeight1 = 1.95;
+// Use the BMI example from Challenge #1, and the code you already wrote, and
+// improve it.
+// Your tasks:
+// 1. Print a nice output to the console, saying who has the higher BMI. The message
+// is either "Mark's BMI is higher than John's!" or "John's BMI is higher than Mark's!"
+// 2. Use a template literal to include the BMI values in the outputs. Example: "Mark's
+// BMI (28.3) is higher than John's (23.9)!"
 
-var MarkBMI1 = MarkWeight1 / (MarkHeight1 * MarkHeight1);
-var JohnBMI1 = JohnWeight1 / (JohnHeight1 * JohnHeight1);
+var dolphinScore1 = 96;
+var dolphinScore2 = 108;
+var dolphinScore3 = 89;
 
-var MarkHigherBMI1 = MarkBMI1 > JohnBMI1;
+var koalaScore1 = 88;
+var koalaScore2 = 91;
+var koalaScore3 = 110;
 
-console.log("Data1 Mark's BMI:", MarkBMI1.toFixed(2));
-console.log("Data1 John's BMI:", JohnBMI1.toFixed(2));
 
-if (MarkHigherBMI1) {
-    console.log(`Mark's BMI (${MarkBMI1.toFixed(2)}) is higher than John's (${JohnBMI1.toFixed(2)})!`);
+var avgDolphins = (dolphinScore1 + dolphinScore2 + dolphinScore3) / 3;
+var avgKoalas = (koalaScore1 + koalaScore2 + koalaScore3) / 3;
+
+console.log("Average score of Dolphins:", avgDolphins);
+console.log("Average score of Koalas:", avgKoalas);
+
+
+if (avgDolphins > avgKoalas && avgDolphins >= 100) {
+    console.log("Dolphins win the trophy!");
+} else if (avgKoalas > avgDolphins && avgKoalas >= 100) {
+    console.log("Koalas win the trophy!");
+} else if (avgDolphins === avgKoalas && avgDolphins >= 100 && avgKoalas >= 100) {
+    console.log("It's a draw, and both teams win the trophy!");
 } else {
-    console.log(`John's BMI (${JohnBMI1.toFixed(2)}) is higher than Mark's (${MarkBMI1.toFixed(2)})!`);
-}
-
-var MarkWeight2 = 95;
-var MarkHeight2 = 1.88;
-
-var JohnWeight2 = 85;
-var JohnHeight2 = 1.76;
-
-var MarkBMI2 = MarkWeight2 / (MarkHeight2 * MarkHeight2);
-var JohnBMI2 = JohnWeight2 / (JohnHeight2 * JohnHeight2);
-
-var MarkHigherBMI2 = MarkBMI2 > JohnBMI2;
-
-console.log("\nData2 Mark's BMI:", MarkBMI2.toFixed(2));
-console.log("Data2 John's BMI:", JohnBMI2.toFixed(2));
-
-if (MarkHigherBMI2) {
-    console.log(`Mark's BMI (${MarkBMI2.toFixed(2)}) is higher than John's (${JohnBMI2.toFixed(2)})!`);
-} else {
-    console.log(`John's BMI (${JohnBMI2.toFixed(2)}) is higher than Mark's (${MarkBMI2.toFixed(2)})!`);
+    console.log("No team wins the trophy.");
 }
