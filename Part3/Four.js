@@ -7,7 +7,7 @@ const YourApp = () => {
       {/* Phần màu đỏ */}
       <View style={{ flex: 2,justifyContent:'center',alignItems:'center' }}> 
       <Image 
-        source={{uri:'https://picsum.photos/seed/picsum/200/300'}} 
+        source={{uri:'https://picsum.photos/200/300'}} 
         style={{height:150,width:200}}>
       </Image>
       </View>
