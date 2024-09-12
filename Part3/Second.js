@@ -6,7 +6,7 @@ const YourApp = () => {
 <View style={{flex:1,backgroundColor:'pink'}}>
 <View style={{flex:1.5,justifyContent:'center',alignItems:'center'
 }}>
-<Image source={{uri:'https://picsum.photos/id/199/300/400'}}
+<Image source={{uri:'https://picsum.photos/200/300'}}
        style={{height:150,width:200}}
 />
 </View>
