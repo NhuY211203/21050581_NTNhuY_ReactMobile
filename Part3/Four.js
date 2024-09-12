@@ -3,7 +3,7 @@ import { Text, View, Button,Image} from 'react-native';
 
 const YourApp = () => {
   return (
-    <View style={{ flex: 1 ,backgroundColor:'pink'}}>
+    <View style={{ flex: 1 ,backgroundColor:'blue'}}>
       {/* Phần màu đỏ */}
       <View style={{ flex: 2,justifyContent:'center',alignItems:'center' }}> 
       <Image 

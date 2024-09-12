@@ -4,7 +4,7 @@ import { FontAwesome } from '@expo/vector-icons';
 
 const YourApp = () => {
   return (
-<View style={{flex:1,backgroundColor:'gold'}}>
+<View style={{flex:1,backgroundColor:'blue'}}>
 <View style={{flex:1,
               justifyContent:'center',
                padding: 20

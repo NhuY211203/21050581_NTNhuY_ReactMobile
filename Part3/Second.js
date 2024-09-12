@@ -3,7 +3,7 @@ import { Text, View, Button,Image,TextInput,TouchableOpacity,StyleSheet} from 'r
 import MaterialCommunityIcons from '@expo/vector-icons/MaterialCommunityIcons';
 const YourApp = () => {
   return (
-<View style={{flex:1,backgroundColor:'pink'}}>
+<View style={{flex:1,backgroundColor:'blue'}}>
 <View style={{flex:1.5,justifyContent:'center',alignItems:'center'
 }}>
 <Image source={{uri:'https://picsum.photos/200/300'}}
